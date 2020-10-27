@@ -94,7 +94,49 @@ main {
     background-color: yellow;
 }
 
-
 .lion img{
     width: 100%;
+}
+
+#voltron {
+    display: none;
+    width: 60%;
+}
+
+.nav-btn {
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .lion-container {
+        display: none
+    }
+
+    #voltron {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .nav-bar{
+        height: 100vh;
+        width: 300px;
+        min-width: 300px;
+        position: fixed;
+        top: 80px;
+        right:0;
+        background-color: black;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        position: absolute;
+        top: 30px;
+        min-width: 300px;
+    }
+    main {
+        z-index: -1;
+    }
+
 }
